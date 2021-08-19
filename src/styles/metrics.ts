@@ -28,4 +28,4 @@ const px = (valuePx: number): number => {
   return screenPixel;
 };
 
-export const metrics = { wp, hp, px };
+export const metrics = { wp, hp, px, baseWidth: `${px(328)}` };

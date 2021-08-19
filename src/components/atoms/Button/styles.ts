@@ -6,7 +6,7 @@ type Button = Pick<ButtonProps, 'outline'>;
 
 export const ButtonContainer = styled.TouchableOpacity<Button>`
   ${({ theme, outline }) => css`
-    width: ${theme.metrics.px(232)}px;
+    width: ${theme.metrics.baseWidth}px;
     height: ${theme.metrics.px(56)}px;
     background-color: ${theme.colors.primary};
     border-radius: ${theme.metrics.px(36)}px;
