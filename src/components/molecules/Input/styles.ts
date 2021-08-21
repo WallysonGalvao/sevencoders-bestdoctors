@@ -1,6 +1,7 @@
 import styled, { css } from 'styled-components/native';
+import { BaseContainer } from '~/components/atoms';
 
-export const InputContainer = styled.View<{ focus: boolean }>`
+export const InputContainer = styled(BaseContainer)<{ focus: boolean }>`
   ${({ theme, focus }) => css`
     width: ${theme.metrics.baseWidth}px;
     height: ${theme.metrics.px(56)}px;
@@ -38,5 +39,13 @@ export const InputText = styled.TextInput`
     color: ${theme.colors.dark};
     margin: 0;
     padding: 0;
+  `}
+`;
+
+export const ErrorLabel = styled.Text`
+  ${({ theme }) => css`
+    font-size: ${theme.metrics.px(12)}px;
+    font-family: ${theme.fonts.regular};
+    color: red;
   `}
 `;

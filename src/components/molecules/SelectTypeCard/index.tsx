@@ -1,5 +1,5 @@
 import React from 'react';
-import { CardTitle, RegularText } from '../../atoms';
+import { CardTitle, RegularText } from '~/components';
 
 import * as S from './styles';
 

@@ -5,19 +5,32 @@ import * as S from './styles';
 
 type InputProps = TextInputProps & {
   label: string;
+  error: string;
 };
 
-export const Input = ({ label, placeholder }: InputProps) => {
+export const Input = ({
+  label,
+  placeholder,
+  value,
+  onChangeText,
+  error,
+  ...props
+}: InputProps) => {
   const [focus, setFocus] = useState(false);
 
   return (
-    <S.InputContainer focus={focus}>
-      <S.InputLabel>{label}</S.InputLabel>
-      <S.InputText
-        placeholder={placeholder}
-        onFocus={() => setFocus(!focus)}
-        onEndEditing={() => setFocus(!focus)}
-      />
-    </S.InputContainer>
+    <>
+      <S.InputContainer pl={6} pt={2} pb={2} focus={focus} {...props}>
+        <S.InputLabel>{label}</S.InputLabel>
+        <S.InputText
+          value={value}
+          placeholder={placeholder}
+          onChangeText={onChangeText}
+          onFocus={() => setFocus(!focus)}
+          onEndEditing={() => setFocus(!focus)}
+        />
+      </S.InputContainer>
+      {error && <S.ErrorLabel>{error}</S.ErrorLabel>}
+    </>
   );
 };

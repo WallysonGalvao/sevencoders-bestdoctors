@@ -1,10 +1,11 @@
 import styled, { css } from 'styled-components/native';
 
-import { ButtonProps } from './';
+import { ButtonProps } from '.';
+import { BaseTouchContainer } from '../Container';
 
 type Button = Pick<ButtonProps, 'outline'>;
 
-export const ButtonContainer = styled.TouchableOpacity<Button>`
+export const ButtonContainer = styled(BaseTouchContainer)<Button>`
   ${({ theme, outline }) => css`
     width: ${theme.metrics.baseWidth}px;
     height: ${theme.metrics.px(56)}px;

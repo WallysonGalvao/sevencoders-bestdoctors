@@ -13,8 +13,14 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@react-navigation/native": "^6.0.2",
+    "@react-navigation/stack": "^6.0.7",
     "react": "17.0.1",
     "react-native": "0.64.1",
+    "react-native-gesture-handler": "^1.10.3",
+    "react-native-safe-area-context": "^3.3.0",
+    "react-native-screens": "^3.5.0",
+    "react-native-vector-icons": "^8.1.0",
     "styled-components": "^5.3.0"
   },
   "devDependencies": {
@@ -29,11 +35,16 @@
     "@storybook/react-native": "^5.3.25",
     "@types/jest": "^26.0.23",
     "@types/react-native": "^0.64.5",
+    "@types/react-native-vector-icons": "^6.4.8",
     "@types/react-test-renderer": "^16.9.2",
     "@types/styled-components-react-native": "^5.1.1",
     "babel-jest": "^26.6.3",
     "babel-loader": "^8.2.2",
+    "babel-plugin-root-import": "^6.6.0",
     "eslint": "^7.14.0",
+    "eslint-import-resolver-babel-plugin-root-import": "^1.1.1",
+    "eslint-import-resolver-typescript": "^2.4.0",
+    "eslint-plugin-import": "^2.24.1",
     "husky": "^7.0.1",
     "jest": "^26.6.3",
     "lint-staged": "^11.1.2",
