@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigation } from '@react-navigation/native';
 
-import { AuthWrapper, Input, Button } from '~/components';
+import { AuthWrapper, Input, Button, TextLink } from '~/components';
 
 export const LoginScreen = () => {
   const { navigate } = useNavigation();
@@ -23,7 +23,7 @@ export const LoginScreen = () => {
       }>
       <Input label="EMAIL" placeholder="meu.email@exemplo.com" />
       <Input mt={16} label="SENHA" placeholder="*********************" />
-      {/* <TextLink text="Esqueceu sua senha? " mt={36} /> */}
+      <TextLink text="Esqueceu sua senha?" mt={36} />
     </AuthWrapper>
   );
 };

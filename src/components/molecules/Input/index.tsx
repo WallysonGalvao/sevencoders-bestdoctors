@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import { TextInputProps } from 'react-native';
+import { BaseTextProps } from '~/components';
 
 import * as S from './styles';
 
-type InputProps = TextInputProps & {
-  label: string;
-  error: string;
-};
+type InputProps = TextInputProps &
+  BaseTextProps & {
+    label: string;
+    error?: string;
+  };
 
 export const Input = ({
   label,

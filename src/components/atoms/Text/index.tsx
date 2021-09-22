@@ -1,10 +1,10 @@
 import { CSSProperties } from 'react';
 import styled, { css } from 'styled-components/native';
 
-type BaseTextProps = {
-  align?: CSSProperties['alignItems'];
-  w?: number;
-  h?: number;
+export type BaseTextProps = {
+  align?: CSSProperties['textAlign'];
+  w?: CSSProperties['width'];
+  h?: CSSProperties['height'];
   mt?: number;
   mb?: number;
   ml?: number;
@@ -38,7 +38,7 @@ export const CardTitle = styled(BaseText)`
   `}
 `;
 
-export const RegularText = styled(BaseText)<{ size: number }>`
+export const RegularText = styled(BaseText)<{ size?: number }>`
   ${({ theme, size }) => css`
     color: ${theme.colors.dark};
     font-size: ${theme.metrics.px(size || 14)}px;
