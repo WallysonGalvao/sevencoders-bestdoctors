@@ -9,7 +9,7 @@ export const InputContainer = styled(BaseContainer)<{ focus: boolean }>`
     align-items: flex-start;
     justify-content: flex-start;
     border-width: ${theme.metrics.px(1)}px;
-    border-color: ${theme.colors.grayDark};
+    border-color: ${theme.colors.greyDark};
     border-radius: ${theme.metrics.px(8)}px;
     padding-horizontal: ${theme.metrics.px(6)}px;
     padding-vertical: ${theme.metrics.px(2)}px;

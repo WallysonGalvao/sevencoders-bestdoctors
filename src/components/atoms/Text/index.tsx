@@ -18,7 +18,7 @@ export type BaseTextProps = {
 
 export const BaseText = styled.Text<BaseTextProps>`
   ${({ theme, align, w, mt, mb, ml, mr, fontFamily, color, size }) => css`
-    width: ${w ? w : 'auto'};
+    width: ${w ? `${w}px` : 'auto'};
     margin-top: ${theme.metrics.px(mt || 0)}px;
     margin-bottom: ${theme.metrics.px(mb || 0)}px;
     margin-left: ${theme.metrics.px(ml || 0)}px;

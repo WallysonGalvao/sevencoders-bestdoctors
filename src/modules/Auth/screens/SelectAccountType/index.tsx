@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { useNavigation } from '@react-navigation/native';
 
-import { AuthWrapper, SelectTypeCard, Button } from '~/components';
+import { AuthWrapper, Button } from '~/components';
 
 import { useAuthStore } from '~/services/store';
+import { SelectTypeCard } from '~/components/molecules/SelectTypeCard';
 
 type AccountType = 'patient' | 'doctor' | 'medical clinic';
 

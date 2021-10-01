@@ -35,7 +35,7 @@ export const BottomBar = ({
 }: BottomTabBarProps) => {
   const focusedOptions = descriptors[state.routes[state.index].key].options;
 
-  if (focusedOptions.tabBarVisible === false) {
+  if (focusedOptions.tabBarStyle === false) {
     return null;
   }
 

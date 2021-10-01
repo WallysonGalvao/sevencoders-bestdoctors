@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { TextInputProps } from 'react-native';
-import { BaseTextProps } from '~/components';
+import { BaseProps } from '~/components';
 
 import * as S from './styles';
 
 type InputProps = TextInputProps &
-  BaseTextProps & {
+  BaseProps & {
     label: string;
     error?: string;
   };

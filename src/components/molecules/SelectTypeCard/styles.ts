@@ -13,7 +13,7 @@ export const CardContainer = styled(BaseTouchContainer)<CardContainer>`
     align-items: center;
     justify-content: space-between;
     border-width: ${theme.metrics.px(1)}px;
-    border-color: ${theme.colors.grayDark};
+    border-color: ${theme.colors.greyDark};
     border-radius: ${theme.metrics.px(8)}px;
     padding: ${theme.metrics.px(6)}px;
 
@@ -44,7 +44,7 @@ export const CheckCircle = styled.View<CardContainer>`
     width: ${theme.metrics.px(24)}px;
     height: ${theme.metrics.px(24)}px;
     border-radius: ${theme.metrics.px(12)}px;
-    border-color: ${theme.colors.grayDark};
+    border-color: ${theme.colors.greyDark};
     border-width: ${theme.metrics.px(2)}px;
     background-color: ${theme.colors.background};
 

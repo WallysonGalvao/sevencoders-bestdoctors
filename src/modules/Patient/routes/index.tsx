@@ -10,7 +10,7 @@ export type RootBottomParamList = {
 };
 
 export type RootStackParamList = {
-  Home: undefined;
+  BottomNavigator: undefined;
   DoctorDetail: undefined;
 };
 
@@ -35,7 +35,7 @@ export const PatientNavigator = () => {
       screenOptions={{
         headerShown: false,
       }}>
-      <Stack.Screen name="Home" component={BottomNavigator} />
+      <Stack.Screen name="BottomNavigator" component={BottomNavigator} />
       <Stack.Screen name="DoctorDetail" component={DoctorDetailScreen} />
     </Stack.Navigator>
   );
