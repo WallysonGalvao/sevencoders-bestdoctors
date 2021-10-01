@@ -1,11 +1,16 @@
 import create from 'zustand';
 
+export type User = {
+  name: string;
+  image: string;
+};
+
 type State = {
-  user: {};
-  setUser: (props: {}) => void;
+  user: User;
+  setUser: (user: User) => void;
 };
 
 export const useAuthStore = create<State>(set => ({
-  user: {},
+  user: {} as User,
   setUser: props => set(state => ({ user: { ...state.user, ...props } })),
 }));

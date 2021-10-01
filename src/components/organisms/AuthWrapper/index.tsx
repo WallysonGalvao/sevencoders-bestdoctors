@@ -7,7 +7,7 @@ import * as S from './styles';
 
 type AuthWrapperProps = {
   children: React.ReactNode;
-  title: string;
+  title?: string;
   bottomChildren: React.ReactNode;
 };
 

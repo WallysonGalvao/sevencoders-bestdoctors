@@ -1,6 +1,8 @@
 import { CSSProperties } from 'react';
 import styled, { css } from 'styled-components/native';
 
+import { theme as th } from '~/styles/theme';
+
 export type BaseTextProps = {
   align?: CSSProperties['textAlign'];
   w?: CSSProperties['width'];
@@ -9,16 +11,22 @@ export type BaseTextProps = {
   mb?: number;
   ml?: number;
   mr?: number;
+  fontFamily?: keyof typeof th.fonts;
+  color?: keyof typeof th.colors;
+  size?: number;
 };
 
 export const BaseText = styled.Text<BaseTextProps>`
-  ${({ theme, align, w, mt, mb, ml, mr }) => css`
+  ${({ theme, align, w, mt, mb, ml, mr, fontFamily, color, size }) => css`
     width: ${w ? w : 'auto'};
     margin-top: ${theme.metrics.px(mt || 0)}px;
     margin-bottom: ${theme.metrics.px(mb || 0)}px;
     margin-left: ${theme.metrics.px(ml || 0)}px;
     margin-right: ${theme.metrics.px(mr || 0)}px;
     text-align: ${align ? align : 'left'};
+    font-family: ${fontFamily ? theme.fonts[fontFamily] : theme.fonts.regular};
+    color: ${color ? theme.colors[color] : theme.colors.dark};
+    font-size: ${theme.metrics.px(size || 16)}px;
   `}
 `;
 

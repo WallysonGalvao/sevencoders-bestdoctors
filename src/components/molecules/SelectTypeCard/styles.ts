@@ -1,10 +1,11 @@
 import styled, { css } from 'styled-components/native';
+import { BaseTouchContainer } from '~/components';
 
 import { SelectTypeCardProps } from '.';
 
 type CardContainer = Pick<SelectTypeCardProps, 'selected'>;
 
-export const CardContainer = styled.TouchableOpacity<CardContainer>`
+export const CardContainer = styled(BaseTouchContainer)<CardContainer>`
   ${({ theme, selected }) => css`
     width: ${theme.metrics.baseWidth}px;
     height: ${theme.metrics.px(120)}px;
@@ -19,6 +20,7 @@ export const CardContainer = styled.TouchableOpacity<CardContainer>`
     ${selected &&
     css`
       border-color: ${theme.colors.primary};
+      border-width: ${theme.metrics.px(2)}px;
     `}
   `}
 `;
