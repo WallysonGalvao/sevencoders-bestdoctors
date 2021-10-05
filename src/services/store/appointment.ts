@@ -9,6 +9,7 @@ export type Review = {
 };
 
 export type DoctorType = {
+  id: number;
   image: string;
   name: string;
   specialty: string;

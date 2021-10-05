@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { AirbnbRating } from 'react-native-ratings';
+
 import {
   BaseBackground,
   BaseContainer,
@@ -12,7 +14,6 @@ import {
   AppointmentModal,
 } from '~/components';
 
-import { AirbnbRating } from 'react-native-ratings';
 import { dayOfTheWeek } from '~/utils/date';
 import { useAppointmentStore } from '~/services/store';
 

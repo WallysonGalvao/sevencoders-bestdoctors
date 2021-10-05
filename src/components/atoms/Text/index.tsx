@@ -5,8 +5,9 @@ import { theme as th } from '~/styles/theme';
 
 export type BaseTextProps = {
   align?: CSSProperties['textAlign'];
-  w?: CSSProperties['width'];
-  h?: CSSProperties['height'];
+  justify?: CSSProperties['justifyContent'];
+  w?: number;
+  h?: number;
   mt?: number;
   mb?: number;
   ml?: number;

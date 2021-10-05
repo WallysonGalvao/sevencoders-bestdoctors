@@ -2,7 +2,7 @@ import create from 'zustand';
 
 export type User = {
   name: string;
-  image: string;
+  image?: string;
 };
 
 type State = {

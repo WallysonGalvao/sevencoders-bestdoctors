@@ -4,6 +4,6 @@ export * from './DoctorsList';
 export * from './BottomBar';
 export * from './AppointmentModal';
 export * from './FeedbackModal';
-/* export * from './CategoriesList';
+export * from './CategoriesList';
 export * from './HistoricList';
-export * from './AppointmentReviewModal'; */
+export * from './AppointmentReviewModal';

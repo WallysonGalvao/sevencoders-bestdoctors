@@ -14,6 +14,7 @@ type FeedbackModalProps = {
   primaryButtonAction?: () => void;
   primaryButtonText?: string;
   secondaryButtonText?: string;
+  secondaryButtonAction?: () => void;
 };
 
 export const FeedbackModal = ({

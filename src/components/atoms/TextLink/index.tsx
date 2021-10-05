@@ -1,9 +1,9 @@
 import React from 'react';
-import { BaseTextProps } from '~/components';
+import { BaseProps } from '~/components';
 import { BaseTouchContainer } from '../Container';
 import { CardTitle } from '../Text';
 
-type TextLink = BaseTextProps & {
+type TextLink = BaseProps & {
   text: string;
   onPress?: () => void;
 };

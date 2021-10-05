@@ -1,14 +1,11 @@
 import React from 'react';
 import { BaseText, RegularText } from '~/components/atoms';
+import { Service } from '~/services/store';
 
 import * as S from './styles';
 
 type ServiceCardProps = {
-  service: {
-    title: string;
-    price: string;
-    description: string;
-  };
+  service: Service;
   selected: boolean;
 };
 

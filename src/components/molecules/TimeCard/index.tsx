@@ -4,7 +4,7 @@ import * as S from './styles';
 
 type TimeCardProps = {
   time: string;
-  selected: boolean;
+  selected?: boolean;
 };
 
 export const TimeCard = ({ time, selected }: TimeCardProps) => (

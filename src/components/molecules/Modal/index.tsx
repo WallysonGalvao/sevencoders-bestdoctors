@@ -9,7 +9,7 @@ type ModalProps = {
   visible: boolean;
   onClose?: () => void;
   buttonText: string;
-  buttonAction: () => void;
+  buttonAction?: () => void;
   title?: string;
   children: React.ReactNode;
   scroll?: boolean;

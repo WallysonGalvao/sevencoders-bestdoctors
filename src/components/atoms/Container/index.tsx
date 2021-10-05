@@ -21,6 +21,7 @@ export type BaseProps = {
   pr?: number;
   bg?: keyof typeof th.colors;
   br?: number;
+  ph?: number;
 };
 
 export const Container = styled.View`
@@ -50,6 +51,9 @@ export const BaseContainer = styled.View<BaseProps>`
     pb,
     pl,
     pr,
+    ph,
+    br,
+    bg,
   }) => css`
     display: flex;
     flex-direction: ${dir || 'column'};
@@ -63,8 +67,11 @@ export const BaseContainer = styled.View<BaseProps>`
     margin-right: ${theme.metrics.px(mr || 0)}px;
     padding-top: ${theme.metrics.px(pt || 0)}px;
     padding-bottom: ${theme.metrics.px(pb || 0)}px;
-    padding-left: ${theme.metrics.px(pl || 0)}px;
-    padding-right: ${theme.metrics.px(pr || 0)}px;
+    /* padding-left: ${theme.metrics.px(pl || 0)}px;
+    padding-right: ${theme.metrics.px(pr || 0)}px; */
+    padding-horizontal: ${theme.metrics.px(ph || 0)}px;
+    background-color: ${bg ? theme.colors[bg] : theme.colors.transparent};
+    border-radius: ${theme.metrics.px(br || 0)}px;
   `}
 `;
 
